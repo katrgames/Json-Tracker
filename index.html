@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinyChaos Stage Tracker</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div class="chart-container">
+      <input type="file" id="fileInput" accept=".json" />
+      <!-- Stage Info -->
+      <div id="stage-info"></div>
+
+      <div id="buttons">
+        <button id="defaultBtn">Default Diagram</button>
+        <button id="incrementBtn">Increment Diagram</button>
+        <label for="colorPalette">Choose Color Palette:</label>
+        <select id="colorPalette">
+          <option value="palette1">Classic</option>
+          <option value="palette2">Dark</option>
+          <option value="palette3">Vibrant</option>
+          <option value="palette4">Custom</option>
+          <option value="palette5">Bright</option>
+          <option value="palette6">Earthy Tones</option>
+          <option value="palette7">Bold and Bright</option>
+          <option value="palette8">Earthy Browns</option>
+          <option value="palette9">Tropical</option>
+          <option value="palette10">Balanced</option>
+          <option value="palette11">Pastels</option>
+          <option value="palette12">Warm Earthy</option>
+        </select>
+      </div>
+
+      <!-- Chart -->
+      <div id="chart"></div>
+
+      <!-- Tooltip -->
+      <div class="tooltip" style="display: none"></div>
+
+      <!-- Buttons -->
+      <div id="legend"></div>
+    </div>
+    <script src="readfile.js"></script>
+  </body>
+</html>

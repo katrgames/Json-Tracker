@@ -1,0 +1,93 @@
+body {
+  background-color: #021526;
+  color: #ffffff;
+  font-family: "Poppins", serif;
+}
+
+.chart-container {
+  margin: 20px auto;
+  max-width: 1280px;
+  width: 90%;
+  text-align: center;
+}
+
+#fileInput {
+  padding: 10px;
+}
+
+#chart {
+  padding: 10px;
+}
+
+#stage-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Two equal-width columns */
+  gap: 20px;                      /* Space between the columns and rows */
+  padding: 15px;
+  width: 100%;
+  max-width: 1200px;               /* Limit the max width */
+  margin: 0 auto;                 /* Center the container */
+}
+
+#stage-info p {
+  font-size: 1em;
+  color: #fff;
+  margin: 0;  /* Remove default margin from paragraphs */
+}
+
+#stage-info strong {
+  font-weight: bold;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#controls button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+#controls button:hover {
+  background-color: #ddd;
+}
+
+#colorPalette {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+button.toggle-btn {
+  background-color: #444;
+  color: white;
+  border: 1px;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.toggle-btn:hover {
+  background-color: #b1afaf;
+}
